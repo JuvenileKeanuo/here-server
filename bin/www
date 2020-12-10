@@ -15,7 +15,7 @@ var fs = require("fs");
  */
 
 var port = normalizePort(process.env.PORT || '443');
-var httpport = normalizePort(process.env.PORT || '80');
+var httpport = normalizePort(process.env.PORT || '3000');
 // app.set('port', port);
 
 /**
@@ -27,7 +27,7 @@ let options = {
   cert: fs.readFileSync("ssl/im-here.cn.pem")
 }
 
-var server = https.createServer(options, app.callback());
+//var server = https.createServer(options, app.callback());
 var httpserver = http.createServer(app.callback());
 
 /**
