@@ -1,5 +1,5 @@
 var router = require('koa-router')()
-var url = 'root:example@127.0.0.1/here'
+var url = 'keanuo:example@127.0.0.1:27017/here'
 var db = require('monk')(url)
 var crypto = require('crypto')
 
